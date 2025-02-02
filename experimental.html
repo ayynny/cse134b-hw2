@@ -13,22 +13,18 @@
             padding: 10px;
         }
     </style>
-
 </head>
 
 <body>
     <header>
         <h1>Experimental Page</h1>
-        <nav>
-            <nav class="nav-container">
-                <a href="home.html">Home</a>
-                <a href="about-me.html">About Me</a>
-                <a href="academics.html">Academics</a>
-                <a href="work.html">Work</a>
-                <a href="experimental.html">Experimental</a>
-                <a href="extra-credit.html">Extra Credit</a>
-
-            </nav>
+        <nav class="nav-container">
+            <a href="home.html">Home</a>
+            <a href="about-me.html">About Me</a>
+            <a href="academics.html">Academics</a>
+            <a href="work.html">Work</a>
+            <a href="experimental.html">Experimental</a>
+            <a href="extra-credit.html">Extra Credit</a>
         </nav>
     </header>
 
@@ -42,38 +38,32 @@
         </dl>
     </aside>
 
-    
-
     <main>
-        <script> //generated w/ chatgpt as per instructions
+        <script>
             class ConsoleMessage extends HTMLElement {
-            connectedCallback() {
-                console.log("Hello, world!");
+                connectedCallback() {
+                    console.log("Hello, world!");
+                }
             }
-        }
-
-        // Define the custom tag <console-message>
-        customElements.define("console-message", ConsoleMessage);
+            customElements.define("console-message", ConsoleMessage);
         </script>
 
         <console-message></console-message>
 
         <p>My current cravings:</p>
         <ol>
-          <li>85c Hokkadio milk bun</li>
-          <li>Strawberry fruit tea</li>
-          <li>Galbi</li>
+            <li>85c Hokkadio milk bun</li>
+            <li>Strawberry fruit tea</li>
+            <li>Galbi</li>
         </ol>
-        
-        
+
         <hgroup>
             <h2>Hokkaido milk bun</h2>
             <p>The best bun.</p>
-          </hgroup>
+        </hgroup>
 
-          <iframe src="https://www.85cbakerycafe.com/menu/hokkaido-custard-bun/" title="85c hokkadio bun"></iframe>
-          <p>My favorite 85c bread is <del>ham and cheese bread</del> <ins>hokkadio milk bun</ins>!</p>
-
+        <iframe src="https://www.85cbakerycafe.com/menu/hokkaido-custard-bun/" title="85c hokkadio bun"></iframe>
+        <p>My favorite 85c bread is <del>ham and cheese bread</del> <ins>hokkadio milk bun</ins>!</p>
 
         <section>
             <dialog open>MEEEOOOOWWW</dialog>
@@ -85,14 +75,12 @@
                  \ v    v  / //
                  /         \//
                  \   v   v  /
-
             </pre>
             <p><dfn title="Cat">Cat:</dfn> meow</p>
             <meow-meow style="background-color:Tomato;">Meow!</meow-meow>
         </section>
 
         <p>Press <kbd>backspace</kbd> to delete once.</p>
-
 
         <section>
             <h2>Interactive Form</h2>
@@ -119,29 +107,24 @@
                     <option value="JavaScript">
                     <option value="C++">
                 </datalist>
-
-               
-
             </form>
-
-            <search>
-                <form action="./search/">
-                  <label for="boba">Find a Boba Store</label>
-                  <input type="search" id="boba" name="boba">
-                  <button type="submit">Search</button>
-                </form>
-              </search>
         </section>
 
+        <!-- Moved search outside of section -->
+        <search>
+            <form action="./search/">
+                <label for="boba">Find a Boba Store</label>
+                <input type="search" id="boba" name="boba">
+                <button type="submit">Search</button>
+            </form>
+        </search>
 
         <section>
             <h2>Multimedia Elements</h2>
-
             <audio controls>
                 <source src="placeholder-audio.mp3" type="audio/mpeg">
                 Your browser does not support the audio tag.
             </audio>
-
             <video controls>
                 <source src="placeholder-audio.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -150,7 +133,6 @@
 
         <section>
             <h2>Canvas & SVG Demo</h2>
-
             <canvas id="myCanvas" width="200" height="100"></canvas>
             <script>
                 let canvas = document.getElementById("myCanvas");
@@ -159,12 +141,9 @@
                 ctx.fillRect(10, 10, 100, 50);
             </script>
             <noscript>Your browser does not support JavaScript!</noscript>
-
-
             <svg width="100" height="100">
                 <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
             </svg>
-
             <template>
                 <h3>Circle</h3>
             </template>
@@ -186,7 +165,6 @@
                     <td>Experiment</td>
                     <td>Success</td>
                 </tr>
-
             </table>
         </section>
 
@@ -197,8 +175,6 @@
                 <p>This is an example of the `<details>` and `<summary>` tags.</p>
             </details>
         </section>
-
     </main>
-
 </body>
 </html>
