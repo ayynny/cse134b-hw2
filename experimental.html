@@ -4,6 +4,15 @@
     <title>Experimental Page</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .nav-container {
+            display: flex;
+            gap: 15px; 
+            white-space: nowrap; 
+            overflow-x: auto;
+            padding: 10px;
+        }
+    </style>
 
 </head>
 
@@ -11,36 +20,79 @@
     <header>
         <h1>Experimental Page</h1>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="about-me.html">About Me</a> |
-            <a href="academics.html">Academics</a>
+            <nav class="nav-container">
+                <a href="home.html">Home</a>
+                <a href="about-me.html">About Me</a>
+                <a href="academics.html">Academics</a>
+                <a href="work.html">Work</a>
+                <a href="experimental.html">Experimental</a>
+                <a href="extra-credit.html">Extra Credit</a>
+
+            </nav>
         </nav>
     </header>
 
     <aside>
-        <h2>Fun Facts</h2>
         <dl>
             <dt><strong>Programming Language:</strong></dt>
             <dd><abbr title="HyperText Markup Language">HTML</abbr> & <abbr title="Cascading Style Sheets">CSS</abbr></dd>
 
-            <dt><strong>Favorite Quote:</strong></dt>
-            <dd><cite>"The best way to predict the future is to create it." - Alan Kay</cite></dd>
+            <dt><strong>A Quote:</strong></dt>
+            <dd><cite>"Mreow" - Anonymous</cite></dd>
         </dl>
     </aside>
 
+    
+
     <main>
+        <script> //generated w/ chatgpt as per instructions
+            class ConsoleMessage extends HTMLElement {
+            connectedCallback() {
+                console.log("Hello, world!");
+            }
+        }
+
+        // Define the custom tag <console-message>
+        customElements.define("console-message", ConsoleMessage);
+        </script>
+
+        <console-message></console-message>
+
+        <p>My current cravings:</p>
+        <ol>
+          <li>85c Hokkadio milk bun</li>
+          <li>Strawberry fruit tea</li>
+          <li>Galbi</li>
+        </ol>
+        
+        
+        <hgroup>
+            <h2>Hokkaido milk bun</h2>
+            <p>The best bun.</p>
+          </hgroup>
+
+          <iframe src="https://www.85cbakerycafe.com/menu/hokkaido-custard-bun/" title="85c hokkadio bun"></iframe>
+          <p>My favorite 85c bread is <del>ham and cheese bread</del> <ins>hokkadio milk bun</ins>!</p>
+
+
         <section>
+            <dialog open>MEEEOOOOWWW</dialog>
             <h2>Cat</h2>
             <pre>
                     ^   ^
-                  (  *_*  )
-                (           )
-                 \         /
-                 /         \
-                 \         /
+                  (  *_*  )    --
+                (           ) //
+                 \ v    v  / //
+                 /         \//
+                 \   v   v  /
 
             </pre>
+            <p><dfn title="Cat">Cat:</dfn> meow</p>
+            <meow-meow style="background-color:Tomato;"">Meow!</meow-meow>
         </section>
+
+        <p>Press <kbd>backspace</kbd> to delete once.</p>
+
 
         <section>
             <h2>Interactive Form</h2>
@@ -67,8 +119,18 @@
                     <option value="JavaScript">
                     <option value="C++">
                 </datalist>
+
+                <search>
+                    <form action="./search/">
+                      <label for="boba">Find a Boba Store</label>
+                      <input type="search" id="boba" name="boba" />
+                      <button type="submit">Search</button>
+                    </form>
+                  </search>
+
             </form>
         </section>
+
 
         <section>
             <h2>Multimedia Elements</h2>
@@ -94,10 +156,16 @@
                 ctx.fillStyle = "blue";
                 ctx.fillRect(10, 10, 100, 50);
             </script>
+            <noscript>Your browser does not support JavaScript!</noscript>
+
 
             <svg width="100" height="100">
                 <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
             </svg>
+
+            <template>
+                <h3>Circle</h3>
+            </template>
         </section>
 
         <section>
