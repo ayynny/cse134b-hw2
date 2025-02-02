@@ -3,17 +3,3 @@ Anny Zhao
 A18078406
 
 
-
-
-
-
-
-
-ins
-del
-
-
-
-
-noscript
-
